@@ -1,2 +1,2 @@
 # SmartSeason-Field-Monitoring-System
-Agriculture Mnagement system to help farmers manage their fams digitally and smartly
+Agriculture Mnagement system to help farmers manage their farms digitally and smartly
