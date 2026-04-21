@@ -1,0 +1,169 @@
+.field-detail {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.detail-header {
+  max-width: 900px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.back-btn {
+  background: #667eea;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.back-btn:hover {
+  background: #764ba2;
+}
+
+.detail-header h1 {
+  color: #333;
+}
+
+.detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.field-info,
+.updates-history {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-section {
+  margin-bottom: 24px;
+}
+
+.info-section h2 {
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.info-item label {
+  color: #999;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.info-item p {
+  color: #333;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.update-section h2 {
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #45a049;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+}
+
+.updates-history h2 {
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.updates-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.update-item {
+  background: #f9f9f9;
+  padding: 12px;
+  border-left: 4px solid #667eea;
+  margin-bottom: 12px;
+  border-radius: 2px;
+}
+
+.update-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.update-header strong {
+  color: #333;
+}
+
+.update-date {
+  color: #999;
+  font-size: 12px;
+}
+
+.update-agent {
+  color: #666;
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.update-notes {
+  color: #666;
+  font-size: 13px;
+  margin: 8px 0 0 0;
+  padding: 8px;
+  background: white;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .detail-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,156 @@
+.fields-list {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.list-header {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.list-header h1 {
+  flex: 1;
+  margin: 0;
+  color: #333;
+}
+
+.create-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.create-btn:hover {
+  background: #45a049;
+}
+
+.filters {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: white;
+  color: #666;
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.fields-table-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+
+.fields-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fields-table thead {
+  background: #f5f5f5;
+}
+
+.fields-table th {
+  text-align: left;
+  padding: 16px;
+  color: #666;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+}
+
+.fields-table td {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.fields-table tr:hover {
+  background: #fafafa;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-link {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.action-link.view {
+  background: #667eea;
+  color: white;
+}
+
+.action-link.view:hover {
+  background: #764ba2;
+}
+
+.action-link.delete {
+  background: #f44336;
+  color: white;
+}
+
+.action-link.delete:hover {
+  background: #d32f2f;
+}
+
+.no-fields {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  text-align: center;
+  color: #999;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .fields-table {
+    font-size: 13px;
+  }
+
+  .fields-table th,
+  .fields-table td {
+    padding: 10px;
+  }
+
+  .list-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .create-btn {
+    width: 100%;
+  }
+}

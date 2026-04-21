@@ -1,0 +1,4 @@
+.env
+smartseason.db
+*.log
+.DS_Store
