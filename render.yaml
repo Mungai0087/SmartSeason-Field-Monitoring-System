@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: smartseason-backend
+    runtime: node
+    plan: free
+    buildCommand: cd backend && npm ci && npm run build || true
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+
+  - type: web
+    name: smartseason-frontend
+    runtime: node
+    plan: free
+    buildCommand: cd frontend && npm ci && npm run build
+    startCommand: cd frontend && npm start
+    envVars:
+      - key: REACT_APP_API_URL
+        fromService:
+          name: smartseason-backend
+          property: url
+        suffixPath: /api
